@@ -10,12 +10,6 @@ const GifGrid = ({ category }) => {
     const {loading} = useFetchGifs();
     console.log(loading);
 
-
-    // useEffect(() => {
-    //     getGifs(category)
-    //     .then( setImatges )
-    // }, [category]);
-
     return (
         <>
         <h3>{category}</h3>

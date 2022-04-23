@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export const useFetchGifs = () => {
@@ -7,9 +7,13 @@ export const useFetchGifs = () => {
         loading: true
     });
 
-    setTimeout(()=>{
+    useEffect(() => {
+
+    }, [])
+
+    setTimeout(() => {
         setState({
-            data: [1,2,3,4,5,6,7],
+            data: [1, 2, 3, 4, 5, 6, 7],
             loading: false
         })
     }, 3000)
